@@ -1,10 +1,8 @@
 //your code here
 function get(){
-	const input=document.getElementById("newTodoInput").value;
 	const list=document.getElementById("todoList");
 	const li=document.createElement("li");
-	li.innerText=input;
-	input.innerText="";
+	li.innerHTML=document.getElementById("newTodoInput").value;
 	list.appendChild(li);
 }
 const button=document.getElementById("addTodoBtn");
