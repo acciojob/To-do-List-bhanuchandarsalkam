@@ -15,7 +15,7 @@ function get(){
 		get();
 	}
 	else{
-		li.innerHTML = document.getElementById("newTodoInput").value;
+		li.innerHTML = val;
     list.appendChild(li);
 	}
     // Clear the input box
