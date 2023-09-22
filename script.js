@@ -9,12 +9,12 @@
 // button.addEventListener("click",get);
 function get(){
     const list = document.getElementById("todoList");
-    const li = document.createElement("li");
 	const val=document.getElementById("newTodoInput").value;
 	if(!val){
 		get();
 	}
 	else{
+		const li = document.createElement("li");
 		li.innerHTML = val;
     list.appendChild(li);
 	}
